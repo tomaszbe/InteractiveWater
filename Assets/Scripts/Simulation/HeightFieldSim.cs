@@ -51,7 +51,8 @@ public class HeightFieldSim : RandomSim {
 	}
 
 
-	private void AddValueAtPoint(Point p)
+    // Modified it to be public, so that we can access it from another script.
+	public void AddValueAtPoint(Point p)
 	{
 		values[p.x][p.y] = Mathf.Min(powerAddMax,values[p.x][p.y]+iterAddPower);
 	}
